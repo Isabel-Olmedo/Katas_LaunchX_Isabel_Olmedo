@@ -1,0 +1,243 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Estilo de la lista de navegación*/
+li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 71px;
+    margin: 0; 
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px; /*espaciado hacia abajo*/
+}
+
+a {
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    color: white;
+}
+
+header {
+    background: url(../assets/img/fondo3.jpg); /*para este caso la imag debe tener alto= 800px ancho = 1920px*/
+    height: 100vh; /*ocupara el 100% del alto de la ventana*/
+    background-size: cover; /*para que se vea toda la imagen*/
+}
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+hr {
+    width: 70%;
+}
+
+.lista a {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sabores h4 {
+    font-size: 30px;
+    margin: 0; /*para que quede mas comprimido*/
+}
+
+.sabores p {
+    font-size: 18px;
+    height: 200px; /*lo use por si tuviera parrafos con menos texto, el icomo se mantuviera en la esquina derecha.*/
+}
+
+.formulario label {
+    display: inline-block;
+    width: 40%;
+    padding-top: 10px;
+    padding-right: 0;
+    margin-left: 10%;
+    
+}
+.formulario input {
+    display: inline-block;
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 0;
+    margin: 0;
+}
+
+#fondo_menu_cliente a {
+    color:rgb(138, 38, 1);
+}
+
+#fondo_menu_cliente li {
+    color:rgb(138, 38, 1);
+}
+
+#fondo_menu_cliente h2 {
+    margin-top: 440px;
+    font-size: 55px;
+    color:rgb(138, 38, 1);
+}
+
+#finEleccion h3{
+    font-size: 23px; /*para hacerlo mas pequeño*/
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/*hacer mas largo el boton*/
+#finEleccion a {
+    padding: 15px 45px 15px 45px;
+    transition: 1s; /*para que el texto vuelva a hacer el mismo efecto suave cuando el mouse se quita de encima del boton*/
+}
+
+/*Lo que va a pasar cuando el mouse pase por encima del botón*/
+#finEleccion a:hover {
+    color: black;
+    transition: 1s;/*Para suavizar el efecto anterior*/
+    transform: scale(1.1);/*para que el boton se agrande*/
+    display: inline-block;
+}
+
+/*Hacer los titulares mas grandes*/
+#carrito h4 {
+    font-size: 23px;
+    margin: 0px 0px 0px 10%;
+    padding: 20px;
+}
+
+/**/
+#carrito table {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0px 30px 5px 250px;
+}
+
+#carrito td {
+    font-size: 14px;
+    padding: 10px 20px 20px 20px;
+    margin-left: 45px;
+}
+
+#carrito th {
+    margin-left: 75px;
+}
+
+/* /////////////////////////
+        ID
+/////////////////////////*/
+
+#fondo_menu_cliente {
+    background: url(../assets/img/fondo6.jpg); /*para este caso la imag debe tener alto= 800px ancho = 1920px*/
+    height: 100vh; /*ocupara el 100% del alto de la ventana*/
+    background-size: cover;
+}
+
+#finEleccion {
+    background: linear-gradient(#eacaa3, #efe5dd);/*Hacer un degradado de color*/
+    text-align: center; /*centrar toda la sección*/
+    padding: 40px 0px 50px 0px;
+    margin-top: 5%;
+}
+
+#carrito {
+    background: #f9fafc;
+    padding-top: 60px;
+    padding-bottom: 50px; /*para que pueda hacer mas scroll hacia abajo*/
+    align-items: center;
+}
+
+#horario {
+    align-items: center;
+    padding: 5% 30% 0 30%;
+}
+
+/* /////////////////////////
+        CLASES
+/////////////////////////*/
+
+/**para que no se pegue el menu de navegacion a los extremos*/
+.contenedor { 
+    max-width: 1280px; /*medida estandar del monitor*/
+    width: 90%; /*para que los elementos esten mas compactados*/
+    margin: auto; /*para que los elementos esten centrados (sino el contenido se va hacia la izquierda)*/
+}
+
+/*Permitir colocar los elementos uno adelante del otro*/
+.menu {
+    display: flex; 
+    justify-content: space-between; /*crea un espacio en medio*/
+    align-items: center; /*alinea los elementos*/
+}
+
+/*lista del menu de navegación*/
+.lista { 
+    display: flex;
+    color: aliceblue;
+}
+
+/*la parte central del nombre*/
+.titular { 
+    text-align: center;
+    margin-top: 200px;
+}
+
+.contenedor-sabores {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.sabor {
+    width: 25%; /*para que quepan los 3 por fila. (antes tenia 29%)*/
+    padding: 50px 38px 50px 38px; /*cuando le ponemos padding a un elemento, este suma como width, por ejemplo, sí width era de 29 + tañamo que ocupa el padding*/
+    border-radius: 10px; /*border redondeado*/
+    margin-bottom: 40px; /*para separar de los cuadros de abajo*/
+    color: #fff;
+}
+
+.colorPan {
+    background: #eacaa3;
+}
+
+.colorRelleno {
+    background: #ba646d;
+}
+
+.colorAdorno {
+    background: #9d4045;
+}
+
+.formulario {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.datos_contacto {
+    align-items: center;
+    padding: 0 20% 0 20%;
+}

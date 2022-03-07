@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Estilo de la lista de navegación*/
+li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 71px;
+    margin: 0; 
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px; /*espaciado hacia abajo*/
+}
+
+a {
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    color: white;
+}
+
+header {
+    background: url(../assets/img/fondo2.jpg); /*para este caso la imag debe tener alto= 800px ancho = 1920px*/
+    height: 100vh; /*ocupara el 100% del alto de la ventana*/
+    background-size: cover; /*para que se vea toda la imagen*/
+}
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+hr {
+    width: 70%;
+}
+
+.lista a {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.titular h2 { 
+    color:rgb(138, 38, 1);
+}
+
+/*Para que las imagenes se adapten 100% al div */
+#secciones img {
+    width: 100%;
+}
+
+#secciones p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+/*Hacer los tirulares mas grandes*/
+#secciones h4 {
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#secciones a {
+    display: inline-block; /*para convertir el boton de un elemento en linea a un elemento en bloque*/
+    margin-left: 20px;/*para que tenga la misma sangria que el titulo*/
+}
+
+#index_pastelero a {
+    color:rgb(138, 38, 1);
+}
+
+#index_pastelero li {
+    color:rgb(138, 38, 1);
+}
+
+#ingredientes h4 {
+    font-size: 23px;
+    margin: 0px 0px 0px 10%;
+    padding: 20px;
+}
+
+/**/
+#ingredientes table {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0px 30px 5px 250px;
+}
+
+#ingredientes td {
+    font-size: 14px;
+    padding: 10px 20px 20px 20px;
+    margin-left: 45px;
+}
+
+#ingredientes th {
+    background: #f9fafc;
+    padding-top: 60px;
+    padding-bottom: 50px; /*para que pueda hacer mas scroll hacia abajo*/
+    align-items: center;
+}
+
+/* /////////////////////////
+        CLASES
+/////////////////////////*/
+
+/**para que no se pegue el menu de navegacion a los extremos*/
+.contenedor { 
+    max-width: 1280px; /*medida estandar del monitor*/
+    width: 90%; /*para que los elementos esten mas compactados*/
+    margin: auto; /*para que los elementos esten centrados (sino el contenido se va hacia la izquierda)*/
+}
+
+/*Permitir colocar los elementos uno adelante del otro*/
+.menu {
+    display: flex; 
+    justify-content: space-between; /*crea un espacio en medio*/
+    align-items: center; /*alinea los elementos*/
+}
+
+/*lista del menu de navegación*/
+.lista { 
+    display: flex;
+    color: rgb(158, 72, 23);
+}
+
+/*la parte central del nombre*/
+.titular { 
+    text-align: center;
+    margin-top: 200px;
+    color:#eff5dd;
+}
+
+.seccion {
+    width: 30%; /*Para achicar las publicaciones*/ 
+    box-shadow: 1px 1px 14px #ccc ; 
+    padding-bottom: 20px; /*para que no quede tan pegado el boton hacia abajo*/
+}
+
+.contenedor-secciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ingredientes {
+    background: #f9fafc;
+    padding-top: 60px;
+    padding-bottom: 50px; /*para que pueda hacer mas scroll hacia abajo*/
+    align-items: center;
+}
+
+/* /////////////////////////
+        ID
+/////////////////////////*/
+#secciones {
+    background: #f9fafc;
+    padding-top: 50px;
+    padding-bottom: 50px; /*para que pueda hacer mas scroll hacia abajo*/
+}
+
+#fin {
+    background: linear-gradient(#eacaa3, #efe5dd);/*Hacer un degradado de color*/
+    text-align: center; /*centrar toda la sección*/
+    padding: 40px 0px 50px 0px;
+    margin-top: 5%;
+}
+

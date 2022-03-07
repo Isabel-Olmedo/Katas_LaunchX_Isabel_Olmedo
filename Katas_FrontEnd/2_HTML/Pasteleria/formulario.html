@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_LAB-Pastelería</title>
+    <link rel="stylesheet" href="css/styles.css"> </link>
+    <!--para font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <div class="contenedor"> <!--div para que el div del menu no quede pegado a los extremos-->
+            <div class="menu">
+                <img src="assets/img/logo3.png" alt="LAB-Pastelería">
+                <nav>
+                    <ul class="lista">
+                        <li><a href="index_Cliente.html">Inicio</a></li> 
+                        <li>Quienes somos</li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="horarios.html">Horario</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+    
+    <section id="carrito">
+        <h4>Carrito</h4>
+        <hr>
+        <table>
+            <tr>
+                <th>Cantidad</th>
+                <th>Producto</th>
+                <th>Precio unitario</th>
+                <th>Precio total</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="cantidad" name="cantidad_pasteles"><br></td>
+                <td>Pan chocolate<br>Relleno Nueces<br>Decoración Fondant<br></td>
+                <td>$400.00</td>
+                <td>$400.00</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--Información del contacto-->
+    <section class="contenedor formulario"> 
+        <h4>Información de contacto</h4>
+        <hr>
+        <label for="Nombre"> Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre">
+        <label for="Correo"> Correo:</label>
+        <input type="text" id="Correo" name="Correo"><br>
+        <input type="checkbox" id="enviarCorreos" name="enviarCorreos" value="enviarCorreos">
+        <label for="enviarCorreos">Enviarme novedades y ofertas por correo.</label>
+    </section>
+
+    <section id="finEleccion">
+        <div class="contenedor">
+            <a>Enviar</a>
+        </div>
+    </section>
+</body>
+</html>
