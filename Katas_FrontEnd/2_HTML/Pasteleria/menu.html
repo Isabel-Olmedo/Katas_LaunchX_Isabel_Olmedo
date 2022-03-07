@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-Pastelería_Menu</title>
+    <link rel="stylesheet" href="css/styles.css"> </link>
+    <!--para font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="fondo_menu_cliente"> 
+        <div class="contenedor"> <!--div para que el div del menu no quede pegado a los extremos-->
+            <div class="menu">
+                <img src="assets/img/logo3.png" alt="LAB-Pastelería">
+                <nav>
+                    <ul class="lista">
+                        <li><a href="index_Cliente.html">Inicio</a></li>
+                        <li>Quienes somos</li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="horarios.html">Horario</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="titular">
+            <h2> ¡ Creamos el pastel que imagines !</h2> 
+        </div>
+    </header> 
+    
+    <!--Seccion para mostrar el menu -->
+    <section>
+        <div class="contenedor"> <!-- Sí quito este div contenedor, los cuadros se iran mas a los extremos y tambien quedaría bien-->
+            <h3>Sabores</h3>
+
+            <h4>Pan</h4>
+
+            <div class="contenedor-sabores">
+                <div class="sabor colorPan">
+                    <h4>Vainilla</h4>
+                    <p>Precio $90.00</p>
+                    <input type="checkbox" id="pan-vainilla" name="pan-vainilla" value="pan-vainilla">
+                    <label for="pan-vainilla">Seleccionar</label>
+                </div>
+    
+                <div class="sabor colorPan">
+                    <h4>Chocolate</h4>
+                    <p>Precio $110.00</p>
+                    <input type="checkbox" id="pan-chocolate" name="pan-chocolate" value="pan-chocolate">
+                    <label for="pan-chocolate">Seleccionar</label>
+                </div>
+    
+                <div class="sabor colorPan">
+                    <h4>3 leches</h4>
+                    <p>Precio $190.00</p>
+                    <input type="checkbox" id="pan-3leches" name="pan-3leches" value="pan-3leches">
+                    <label for="pan-3leches">Seleccionar</label>
+                </div>
+            </div>
+
+            <h4>Relleno</h4>
+
+            <div class="contenedor-sabores">
+                <div class="sabor colorRelleno">
+                    <h4>Nueces</h4>
+                    <p>Precio $90.00</p>
+                    <input type="checkbox" id="relleno-nueces" name="relleno-nueces" value="relleno-nueces">
+                    <label for="relleno-nueces">Seleccionar</label>
+                </div>
+    
+                <div class="sabor colorRelleno">
+                    <h4>Frutos rojos</h4>
+                    <p>Precio $110.00</p>
+                    <input type="checkbox" id="relleno-rojos" name="relleno-rojos" value="relleno-rojos">
+                    <label for="relleno-rojos">Seleccionar</label>
+                </div>
+    
+                <div class="sabor colorRelleno">
+                    <h4>Chocolate</h4>
+                    <p>Precio $190.00</p>
+                    <input type="checkbox" id="relleno-chocolate" name="relleno-chocolate" value="relleno-chocolate">
+                    <label for="relleno-chocolate">Seleccionar</label>
+                </div>
+            </div>
+
+            <h4>Adorno/Decoración</h4>
+
+            <div class="contenedor-sabores">
+                <div class="sabor colorAdorno">
+                    <h4>Nueces</h4>
+                    <p>Precio $90.00</p>
+                    <input type="checkbox" id="adorno-nueces" name="adorno-nueces" value="adorno-nueces">
+                    <label for="adorno-nueces">Seleccionar</label>
+                </div>
+    
+                <div class="sabor colorAdorno">
+                    <h4>Fresas</h4>
+                    <p>Precio $110.00</p>
+                    <input type="checkbox" id="adorno-fresas" name="adorno-fresas" value="adorno-fresas">
+                    <label for="adorno-fresas">Seleccionar</label>
+                </div>
+    
+                <div class="sabor colorAdorno">
+                    <h4>Fondant</h4>
+                    <p>Precio $190.00</p>
+                    <input type="checkbox" id="adorno-fondant" name="adorno-fondant" value="adorno-fondant">
+                    <label for="adorno-fondant">Seleccionar</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion final para hacer pedido-->
+    <section id="finEleccion">
+        <div class="contenedor">
+            <h3>¿Listo para tu creación ?</h3>
+            <a href="formulario.html">Hacer pedido</a>
+        </div>
+    </section>
+</body>
+</html>
